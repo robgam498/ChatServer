@@ -1,0 +1,104 @@
+=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+CIS 1200 HW07 README
+PennKey: 11906606
+=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+
+============
+=: Task 2 :=
+============
+
+- Do you plan on creating any new classes in your design? If so, what classes
+  are you making, what do they store, and what behaviors do they have?
+
+    Yes, I will make a "Channel" class to instantiate channel objects by storing
+    chanelIDs, owners, users, and looks at invites (public or private).
+
+
+- How do you plan on storing what users are registered on the server?
+
+    I will use a TreeMap because it has the ability to store integers
+    and strings which can be used for things like IDs, users, and names.
+
+
+- How do you plan on keeping track of which user has which user ID, considering
+  the fact that the user's nickname can change over the course of the program?
+
+    I will, again, be using a TreeMap that will store the same information and
+    be updated by changing the keys or values.
+
+
+- How do you plan on storing what users are in a channel?
+
+    Treemap will be used for the same reasons listed before.
+
+
+- How do you plan on keeping track of which user is the owner of each channel?
+
+    Owners will be passed in as a channel parameter and the nicknames as a string.
+
+
+- Justify your choice of collections (Set, Map, or List) for the
+  collections you use in your design.
+
+    Because I want to keep track of the user IDs, usernames, and other ints and strings,
+    I elected to use a tree map. TreeMap is an easy tool because order doesn't matter
+    and duplicates are prevented. This makes it a better choice over LinkedLists and
+    Sets which can't store an int and string for each person in the chat.
+
+
+============
+=: Task 3 :=
+============
+
+- Did you make any changes to your design while doing this task? Why?
+
+    I did not make any changes during this task because I was satisfied with how my
+    ints and strings were being stored in Channel.
+
+
+============
+=: Task 4 :=
+============
+
+- Did you make any changes to your design while doing this task? Why?
+
+    I did not make any changes during this task because I was satisfied with how my
+    ints and strings were being stored in Channel.
+
+
+============
+=: Task 5 :=
+============
+
+- How do you plan on keeping track of which channels are invite-only?
+
+    I decided to add in a boolean parameter to the channel class that is "true"
+    when the channel is private and "false" when it is public.
+
+
+- Will you make any changes to your work from before in order to make
+  implementing invite-only channels easier?
+
+    I added a getter function so that the boolean that I made for channel
+    status could be accessed.
+
+
+============
+=: Task 6 :=
+============
+
+- Did you have to make any changes to your design in Task 6? Why?
+
+    Yes, in order to get through Task 6, it was necessary for me to add helper functions
+    to reduce the amount of repeated steps needed to be done. This was especially useful
+    for checking if members were actively inside a channel or not, because this is
+    something that needs to be checked often within the maps.
+
+
+- If you were to redo this assignment, what changes (if any) would you make in
+  how you designed your code?
+
+    If I could go back, I would add more functionality into another separate class for
+    users. Much of this assignment was just finding code from a previous problem and
+    copying it down and making a few edits. As such, I think an implementation of these
+    new classes would have saved time and made my code more concise.
