@@ -83,7 +83,3 @@ This project taught me the importance of designing systems that are both scalabl
 1. Run `ServerMain.java` to start the server.
 2. Launch a client by running the `hw07-client.jar` file. Use multiple clients for testing.
 
-### Command Line
-Run the client using:
-```bash
-java -jar <path-to-client>
